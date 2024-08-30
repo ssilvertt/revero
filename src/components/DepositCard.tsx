@@ -35,7 +35,7 @@ export function DepositCard() {
             </div>
             <HrSVG className="mt-2" />
             <div className="flex justify-around mt-3">
-                <button className="rounded-[10.5px] bg-gradient-to-b from-[#4204ff] to-[#2e9cfe] px-4 py-2 border-t border-[#3891ff80] flex gap-x-1">
+                <button className="rounded-[10.5px] bg-gradient-to-b from-[#4204ff] to-[#2e9cfe] px-4 py-2 border-t border-[#3D4AFF] flex gap-x-1">
                     <InvestSVG />
                     <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%]">Инвестировать</p>
                 </button>
