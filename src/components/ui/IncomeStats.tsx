@@ -5,7 +5,7 @@ export function IncomeStats(){
 		"По партнерской программе",
 		"Инвестированно за 7 дней",
 		"Прибыль за 7 дней"
-	];
+	]
 	return(
 		<div className="max-w-full rounded-[14px] backdrop-blur-[45.31px] bg-[rgba(17,17,17,0.55)] px-4 py-2">
 			{rowTexts.map((text, index) => (
