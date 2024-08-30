@@ -29,7 +29,7 @@ export function Layout() {
     
     return (
       <WebAppProvider>
-          <div className="flex flex-col h-screen bg-main no-scrollbar">
+          <div className="flex flex-col min-hh-screen bg-main no-scrollbar">
               <main className="flex-grow overflow-y-auto text-white">
                   <Outlet />
               </main>
