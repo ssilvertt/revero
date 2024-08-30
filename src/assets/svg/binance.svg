@@ -1,0 +1,95 @@
+<svg width="124.513306" height="124.513306" viewBox="0 0 124.513 124.513" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_179_239_dd" x="38.807129" y="38.807617" width="52.968079" height="52.968140" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="4.95137"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+		<filter id="filter_179_240_dd" x="0.000000" y="0.000000" width="124.513306" height="124.513306" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="5.64315" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_179_247_dd" x="37.681519" y="37.681641" width="50.242188" height="50.242188" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="4.69655"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+		<clipPath id="clip179_249">
+			<rect id="binance-logo 1" rx="-0.575740" width="27.635527" height="27.635527" transform="translate(50.897396 50.898006)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<filter id="filter_179_256_dd" x="34.891846" y="34.892456" width="59.646606" height="59.646606" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="5.14328" result="effect_layerBlur_1"/>
+		</filter>
+		<clipPath id="clip179_256">
+			<rect id="binance-logo 2" rx="-0.575740" width="27.635527" height="27.635527" transform="translate(50.897396 50.898006)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="107.032318" y1="10.622524" x2="45.428123" y2="91.173813" id="paint_linear_179_239_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.444137" stop-color="#F3BA2F"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient x1="102.395645" y1="10.947006" x2="43.961792" y2="87.352928" id="paint_linear_179_247_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.444137" stop-color="#F3BA2F"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<g opacity="0.050000">
+		<circle id="Ellipse 2166" cx="64.715881" cy="64.715820" r="47.786434" fill="#F3BA2F" fill-opacity="1.000000"/>
+	</g>
+	<g opacity="0.020000">
+		<circle id="Ellipse 2167" cx="64.716064" cy="64.715942" r="40.877552" fill="#F3BA2F" fill-opacity="1.000000"/>
+	</g>
+	<circle id="Ellipse 2168" cx="65.292175" cy="65.291626" r="33.392925" fill="#FFCE58" fill-opacity="1.000000"/>
+	<circle id="Ellipse 2171" cx="65.292175" cy="65.291626" r="33.392925" fill="#78F2BC" fill-opacity="0"/>
+	<circle id="Ellipse 2171" cx="65.292175" cy="65.291626" r="27.635523" stroke="#F3BA2F" stroke-opacity="1.000000" stroke-width="11.514804"/>
+	<circle id="Ellipse 2170" cx="65.292175" cy="65.291626" r="33.392925" fill="#78F2BC" fill-opacity="0"/>
+	<circle id="Ellipse 2170" cx="65.292175" cy="65.291626" r="27.635523" stroke="#F3BA2F" stroke-opacity="1.000000" stroke-width="11.514804"/>
+	<circle id="Ellipse 2169" cx="65.292175" cy="65.291626" r="33.392925" fill="#78F2BC" fill-opacity="0"/>
+	<circle id="Ellipse 2169" cx="65.292175" cy="65.291626" r="31.089964" stroke="#9B761C" stroke-opacity="1.000000" stroke-width="4.605922"/>
+	<g filter="url(#filter_179_239_dd)">
+		<circle id="Ellipse 2172" cx="65.291199" cy="65.291626" r="26.484045" fill="url(#paint_linear_179_239_0)" fill-opacity="0.650000"/>
+	</g>
+	<g opacity="0.360000" filter="url(#filter_179_240_dd)">
+		<g opacity="0.050000">
+			<circle id="Ellipse 2166" cx="62.256653" cy="62.256592" r="45.327209" fill="#F3BA2F" fill-opacity="1.000000"/>
+		</g>
+		<g opacity="0.020000">
+			<circle id="Ellipse 2167" cx="62.256409" cy="62.256592" r="38.773872" fill="#F3BA2F" fill-opacity="1.000000"/>
+		</g>
+		<circle id="Ellipse 2168" cx="62.802368" cy="62.802612" r="31.674431" fill="#F3BA2F" fill-opacity="1.000000"/>
+		<circle id="Ellipse 2171" cx="62.802368" cy="62.802612" r="31.674431" fill="#78F2BC" fill-opacity="0"/>
+		<circle id="Ellipse 2171" cx="62.802368" cy="62.802612" r="26.213322" stroke="#F3BA2F" stroke-opacity="1.000000" stroke-width="10.922220"/>
+		<circle id="Ellipse 2170" cx="62.802368" cy="62.802612" r="31.674431" fill="#78F2BC" fill-opacity="0"/>
+		<circle id="Ellipse 2170" cx="62.802368" cy="62.802612" r="28.397764" stroke="#F3BA2F" stroke-opacity="1.000000" stroke-width="6.553332"/>
+		<circle id="Ellipse 2169" cx="62.802368" cy="62.802612" r="31.674431" fill="#78F2BC" fill-opacity="0"/>
+		<circle id="Ellipse 2169" cx="62.802368" cy="62.802612" r="29.489986" stroke="#F3BA2F" stroke-opacity="1.000000" stroke-width="4.368888"/>
+		<g filter="url(#filter_179_247_dd)">
+			<circle id="Ellipse 2172" cx="62.802612" cy="62.802734" r="25.121103" fill="url(#paint_linear_179_247_0)" fill-opacity="0.650000"/>
+		</g>
+	</g>
+	<rect id="binance-logo 1" rx="-0.575740" width="27.635527" height="27.635527" transform="translate(50.897396 50.898006)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip179_249)">
+		<path id="Vector" d="M59.12 62.41L64.71 56.82L70.31 62.42L73.56 59.16L64.71 50.32L55.87 59.16L59.12 62.41Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M50.32 64.71L53.57 61.46L56.82 64.71L53.57 67.96L50.32 64.71Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M59.12 67.01L64.71 72.6L70.31 67.01L73.56 70.26L64.72 79.1L55.87 70.26L59.12 67.01Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M72.6 64.71L75.85 61.46L79.1 64.71L75.85 67.96L72.6 64.71Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M68.01 64.71L64.71 61.41L62.27 63.85L61.99 64.13L61.41 64.7L64.71 68L68.01 64.71L68.01 64.71Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<g opacity="0.620000" filter="url(#filter_179_256_dd)">
+		<rect id="binance-logo 2" rx="-0.575740" width="27.635527" height="27.635527" transform="translate(50.897396 50.898006)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip179_256)">
+			<path id="Vector" d="M59.12 62.41L64.71 56.82L70.31 62.42L73.56 59.16L64.71 50.32L55.87 59.16L59.12 62.41Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M50.32 64.71L53.57 61.46L56.82 64.71L53.57 67.96L50.32 64.71Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M59.12 67.01L64.71 72.6L70.31 67.01L73.56 70.26L64.72 79.1L55.87 70.26L59.12 67.01Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M72.6 64.71L75.85 61.46L79.1 64.71L75.85 67.96L72.6 64.71Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M68.01 64.71L64.71 61.41L62.27 63.85L61.99 64.13L61.41 64.7L64.71 68L68.01 64.71L68.01 64.71Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
