@@ -9,6 +9,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('src/assets/fonts/proximanova_regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('src/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @keyframes glow {
     0% {
         opacity: 0;
