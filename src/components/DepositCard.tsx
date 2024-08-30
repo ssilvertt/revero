@@ -1,7 +1,9 @@
+
 import CartSVG from '@svg/cart.svg?react';
 import BinanceSVG from '@svg/binance.svg?react';
 import HrSVG from '@svg/hr.svg?react';
 import InvestSVG from '@svg/invest.svg?react';
+import CollectSVG from '@svg/collect.svg?react';
 export function DepositCard() {
     return (
         <div
@@ -34,12 +36,19 @@ export function DepositCard() {
                 <p className="bg-[#16191E] px-2 rounded-[10px] text-[#5FFF9F]">11%</p>
             </div>
             <HrSVG className="mt-2" />
-            <div className="flex justify-around mt-3">
-                <button className="rounded-[10.5px] bg-gradient-to-b from-[#4204ff] to-[#2e9cfe] px-4 py-2 border-t border-[#3D4AFF] flex gap-x-1">
+            <div className="flex justify-between mt-3">
+                <button
+                    className="rounded-[10.5px] bg-gradient-to-b from-[#4204ff] to-[#2e9cfe] px-4 py-2 border-t border-[#3D4AFF] flex gap-x-1">
                     <InvestSVG />
                     <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%]">Инвестировать</p>
                 </button>
+                <button
+                    className="rounded-[10.5px] bg-gradient-to-b from-[#181921] to-[#181A22] px-4 py-2 border-t border-[#0F1014] flex gap-x-1">
+                    <CollectSVG />
+                    <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%]">Инвестировать</p>
+                </button>
             </div>
+            <HrSVG className="mt-2" />
         </div>
     );
 }
