@@ -1,6 +1,7 @@
 import { DepositCard } from '../components/DepositCard.tsx';
 import { Header } from '../components/Header.tsx';
-import { IncomeStats } from '../components/ui/IncomeStats.tsx'
+import { IncomeStats } from '../components/ui/IncomeStats.tsx';
+import { StatCard } from '../components/ui/StatCard.tsx';
 
 export function Main() {
     return (
@@ -18,10 +19,15 @@ export function Main() {
                         Заработано на платформе
                     </p>
                 </div>
-              <div className='mx-2 mt-3'>
-                <IncomeStats/>
-              </div>
-             
+                <div className="mx-2 mt-3">
+                    <IncomeStats />
+                </div>
+                <div className="mx-2 mt-3 flex flex-col gap-y-3">
+                    <StatCard />
+                    <StatCard />
+                    <StatCard />
+                </div>
+              
             </div>
         </>
     );
