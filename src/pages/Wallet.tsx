@@ -1,7 +1,3 @@
-export function Wallet(){
-	return(
-		<div>
-		Wallet
-		</div>
-	)
+export function Wallet() {
+    return <div>Wallet</div>;
 }
