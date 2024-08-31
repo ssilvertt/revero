@@ -1,5 +1,6 @@
 import { DepositCard } from '../components/DepositCard.tsx';
 import { Header } from '../components/Header.tsx';
+import MobileIncomeChart from '../components/ui/Chart.tsx'
 import { IncomeStats } from '../components/ui/IncomeStats.tsx';
 import { StatCard } from '../components/ui/StatCard.tsx';
 
@@ -24,6 +25,9 @@ export function Main() {
                 </div>
                 <div className="mx-2 mt-3">
                     <IncomeStats />
+                </div>
+                <div className='my-5'>
+                    <MobileIncomeChart/>
                 </div>
                 <div className="mx-2 mt-3 flex flex-col gap-y-3">
                     <StatCard variant="invest" />
