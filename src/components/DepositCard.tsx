@@ -40,7 +40,9 @@ export function DepositCard() {
             <div className="flex justify-between mt-3">
                 <button className="rounded-[10.5px] bg-gradient-to-b from-[#4204ff] to-[#2e9cfe] px-4 py-2 border-t border-[#3D4AFF] flex gap-x-1">
                     <InvestSVG />
-                    <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%] items-center">Инвестировать</p>
+                    <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%] items-center">
+                        Инвестировать
+                    </p>
                 </button>
                 <button className="rounded-[10.5px] bg-gradient-to-b from-[#181921] to-[#181A22] px-4 py-2 border-t border-[#0F1014] flex items-center gap-x-1">
                     <CollectSVG />
@@ -65,16 +67,14 @@ export function DepositCard() {
                         <p className="text-[17.23px] leading-[21px] font-bold mt-1">0₽</p>
                     </div>
                 </div>
-                <div className='mt-3'>
+                <div className="mt-3">
                     <ProgressBar progress={50} />
                 </div>
-                <div className='flex flex-col mt-4 gap-y-2'>
+                <div className="flex flex-col mt-4 gap-y-2">
                     <p className="text-[17.23px] leading-[21px] font-bold mt-1">Личный депозит: 0₽ </p>
                     <p className="text-[17.23px] leading-[21px] font-bold mt-1">До следующего тарифа: 9222₽ </p>
                 </div>
-            
             </div>
-        
         </div>
     );
 }

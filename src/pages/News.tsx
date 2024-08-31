@@ -1,7 +1,3 @@
-export function News(){
-	return(
-		<div>
-		News
-		</div>
-	)
+export function News() {
+    return <div>News</div>;
 }

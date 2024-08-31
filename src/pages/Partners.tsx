@@ -1,7 +1,3 @@
-export function Partners(){
-	return(
-		<div>
-		Partners
-		</div>
-	)
+export function Partners() {
+    return <div>Partners</div>;
 }

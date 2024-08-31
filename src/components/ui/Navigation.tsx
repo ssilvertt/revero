@@ -8,7 +8,7 @@ interface NavigationProps {
 
 export function Navigation({ links }: NavigationProps) {
     return (
-        <nav className="bg-nav shadow-lg relative rounded-t-[20px] h-[90px]">
+        <nav className="bg-nav shadow-lg relative rounded-t-[20px] h-[90px] ">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[96px] h-[42px] bg-main rounded-b-full"></div>
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -mt-[51px]">
                 <div className="absolute w-[84px] h-[84px] rounded-full bg-gradient-to-b from-[#4200ff] to-[#3891ff] opacity-[24%] blur-xl"></div>
