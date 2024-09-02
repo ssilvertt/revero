@@ -18,11 +18,10 @@ const LoadingScreen: React.FC<{ progress: number }> = ({ progress }) => (
         exit={{ opacity: 0 }}
         className="fixed inset-0 flex items-center justify-center bg-[#111930] z-50"
     >
-        <div className="w-64">
-            <div className="mb-4 text-white text-center">Загрузка приложения...</div>
-         
-                <ProgressBar progress={progress}/>
-           
+        <div className="">
+            <img src="/src/assets/imgs/HeaderLogo.png" className="h-[103.54px] w-[270.45px] mr-4 mb-4" />
+
+            <ProgressBar progress={progress} />
         </div>
     </motion.div>
 );
