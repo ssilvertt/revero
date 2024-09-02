@@ -40,7 +40,7 @@
 .embla__dots {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
 }

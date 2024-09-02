@@ -1,16 +1,15 @@
 import React, { useCallback } from 'react';
 import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel';
-import { DotButton, useDotButton } from './EmbaCarouselDotButton.tsx';
-import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import { DotButton, useDotButton } from './EmbaCarouselDotButton';
 
 type PropType = {
-    slides: number[];
+    slides: { id: number; imageUrl: string }[];
     options?: EmblaOptionsType;
 };
 
-const EmblaCarousel: React.FC<PropType> = (props) => {
-    const { slides, options } = props;
+const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
     const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
@@ -18,36 +17,39 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         if (!autoplay) return;
 
         const resetOrStop = autoplay.options.stopOnInteraction === false ? autoplay.reset : autoplay.stop;
-
         resetOrStop();
     }, []);
 
     const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi, onNavButtonClick);
 
     return (
-        <section className="embla">
-            <div className="embla__viewport" ref={emblaRef}>
-                <div className="embla__container">
-                    {slides.map((index) => (
-                        <div className="embla__slide" key={index}>
-                            <div className="embla__slide__number">{index + 1}</div>
+        <div className="relative overflow-hidden">
+            <div className="embla overflow-hidden" ref={emblaRef}>
+                <div className="embla__container flex">
+                    {slides.map((slide) => (
+                        <div key={slide.id} className="embla__slide flex-[0_0_100%] min-w-0">
+                            <img
+                                src={slide.imageUrl}
+                                alt={`Slide ${slide.id}`}
+                                className="embla__slide__img block w-full h-auto object-cover"
+                            />
                         </div>
                     ))}
                 </div>
             </div>
 
-            <div className="embla__controls">
-                <div className="embla__dots">
-                    {scrollSnaps.map((_, index) => (
-                        <DotButton
-                            key={index}
-                            onClick={() => onDotButtonClick(index)}
-                            className={'embla__dot'.concat(index === selectedIndex ? ' embla__dot--selected' : '')}
-                        />
-                    ))}
-                </div>
+            <div className="embla__dots mt-1 flex space-x-2">
+                {scrollSnaps.map((_, index) => (
+                    <DotButton
+                        key={index}
+                        onClick={() => onDotButtonClick(index)}
+                        className={`w-1 h-1 rounded-full transition-all duration-300 ${
+                            index === selectedIndex ? 'bg-gradient-to-b from-[#4201FF] to-[#3891FF]' : 'bg-[#172244]'
+                        }`}
+                    />
+                ))}
             </div>
-        </section>
+        </div>
     );
 };
 
