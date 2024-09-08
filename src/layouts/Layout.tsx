@@ -4,27 +4,20 @@ import NewsSVG from '@svg/news.svg?react';
 import PartnersSVG from '@svg/partners.svg?react';
 import WalletSVG from '@svg/wallet.svg?react';
 import { useExpand, WebAppProvider } from '@vkruglikov/react-telegram-web-app';
-import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Navigation } from '../components/ui/Navigation';
 import type { NavLinkProps } from '../components/ui/NavLink';
-import { ProgressBar } from '../components/ui/ProgressBar.tsx';
+import { LoadingScreen } from '../components/LoadingScreen.tsx';
 
-const LoadingScreen: React.FC<{ progress: number }> = ({ progress }) => (
-    <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="fixed inset-0 flex items-center justify-center bg-[#111930] z-50"
-    >
-        <div className="">
-            <img src="/src/assets/imgs/HeaderLogo.png" className="h-[103.54px] w-[270.45px] mr-4 mb-4" />
+declare global {
+    interface Window {
+        Telegram: any;
+    }
+}
 
-            <ProgressBar progress={progress} />
-        </div>
-    </motion.div>
-);
+
 
 export function Layout() {
     const [isExpanded, expand] = useExpand();
@@ -37,7 +30,6 @@ export function Layout() {
             expand();
         }
 
-        // Симуляция загрузки
         const timer = setInterval(() => {
             setLoadingProgress((oldProgress) => {
                 if (oldProgress === 100) {
@@ -63,7 +55,7 @@ export function Layout() {
     return (
         <WebAppProvider>
             <div className="flex flex-col min-h-screen bg-main">
-                <AnimatePresence>
+               
                     {isLoading ? (
                         <LoadingScreen progress={loadingProgress} />
                     ) : (
@@ -80,13 +72,13 @@ export function Layout() {
                                 initial={{ y: 100 }}
                                 animate={{ y: 0 }}
                                 transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                                className="fixed bottom-0 left-0 right-0 z-50"
+                                className="fixed bottom-0 left-0 right-0 z-40"
                             >
                                 <Navigation links={navLinks} />
                             </motion.div>
                         </motion.div>
                     )}
-                </AnimatePresence>
+     
             </div>
         </WebAppProvider>
     );

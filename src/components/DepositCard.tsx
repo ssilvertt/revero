@@ -5,6 +5,7 @@ import InvestSVG from '@svg/invest.svg?react';
 import CollectSVG from '@svg/collect.svg?react';
 import CalcSVG from '@svg/calc.svg?react';
 import { ProgressBar } from './ui/ProgressBar.tsx';
+import { AnimatedButton } from './ui/AnimatedButton.tsx';
 export function DepositCard() {
     return (
         <div
@@ -38,16 +39,16 @@ export function DepositCard() {
             </div>
             <HrSVG className="mt-2" />
             <div className="flex justify-between mt-3">
-                <button className="rounded-[10.5px] bg-gradient-to-b from-[#4204ff] to-[#2e9cfe] px-4 py-2 border-t border-[#3D4AFF] flex gap-x-1">
+                <AnimatedButton className="rounded-[10.5px] bg-gradient-to-b from-[#4204ff] to-[#2e9cfe] px-4 py-2 border-t border-[#3D4AFF] flex gap-x-1 items-center text-white">
                     <InvestSVG />
-                    <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%] items-center">
+                    <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%]">
                         Инвестировать
                     </p>
-                </button>
-                <button className="rounded-[10.5px] bg-gradient-to-b from-[#181921] to-[#181A22] px-4 py-2 border-t border-[#0F1014] flex items-center gap-x-1">
+                </AnimatedButton>
+                <AnimatedButton className="rounded-[10.5px] bg-gradient-to-b from-[#181921] to-[#181A22] px-4 py-2 border-t border-[#0F1014] flex items-center gap-x-1 text-white">
                     <CollectSVG />
                     <p className="font-proxima font-bold text-[13.75px] leading-[110%] tracking-[-2%]">Собрать</p>
-                </button>
+                </AnimatedButton>
             </div>
             <HrSVG className="mt-2" />
             <div>

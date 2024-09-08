@@ -1,13 +1,34 @@
+import { useState } from 'react';
 import { DepositCard } from '../components/DepositCard.tsx';
 import { Header } from '../components/Header.tsx';
 import MobileIncomeChart from '../components/ui/Chart.tsx';
 import { IncomeStats } from '../components/ui/IncomeStats.tsx';
 import { StatCard } from '../components/ui/StatCard.tsx';
-
+import { motion } from 'framer-motion';
 export function Main() {
+    const [balance] = useState(31113);
+
     return (
-        <>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 1}}>
             <Header />
+            <div className="flex justify-between px-2 items-center">
+                <div className="rounded-[8.61px] shadow-[1.48px_2.08px_4.04px_0px_rgba(0,0,0,0.25)] bg-[rgb(20,29,55)]  mt-5 mb-5 w-[190px] flex flex-col py-1">
+                    <p className="font-proxima text-[11.22px] font-bold leading-[110%] tracking-[-2%] text-center">
+                        Ваш баланс
+                    </p>
+                    <p className="text-[30.76px] font-bold leading-[110%] tracking-[-2%] text-center">
+                        {balance.toFixed(0)}₽
+                    </p>
+                </div>
+                <motion.button
+                    className="text-[16px] font-bold leading-[110%] tracking-[-2%] rounded-[14px] bg-gradient-to-b from-[#4201FF] to-[#3891FF] h-11 px-8 text-white shadow-lg"
+                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                >
+                    Пополнить
+                </motion.button>
+            </div>
 
             <div className="flex flex-col h-full relative w-full">
                 <div className="absolute left-0 right-0 top-0 h-2 -mt-2 bg-active opacity-20 blur-sm rounded-t-[10px]"></div>
@@ -23,16 +44,16 @@ export function Main() {
                 <div className="mx-2 mt-3">
                     <IncomeStats />
                 </div>
-                <div className="mx-2 my-5 pb-10">
+                <div className="mx-2 my-5 ">
                     <MobileIncomeChart />
                 </div>
-                <div className="mx-2 mt-3 flex flex-col gap-y-3">
+                <div className="mx-2 mt-1 flex flex-col gap-y-3">
                     <StatCard variant="invest" />
                     <StatCard variant="minimal" />
                     <StatCard variant="income" />
                 </div>
                 <div className="mb-20"></div>
             </div>
-        </>
+        </motion.div>
     );
 }

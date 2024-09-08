@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { InvestCard } from './InvestCard';
 const CRYPTO_TYPES = ['Tether', 'Binance', 'Ethereum', 'Bitcoin'] as const;

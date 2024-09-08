@@ -9,7 +9,7 @@ export interface NavLinkProps {
 
 export function NavLink({ to, Icon, label }: NavLinkProps) {
     return (
-        <li>
+        <>
             <Link to={to} className="flex flex-col items-center text-gray-600 hover:text-blue-500">
                 <div className="h-6 flex items-center justify-center mb-2">
                     <Icon />
@@ -18,6 +18,6 @@ export function NavLink({ to, Icon, label }: NavLinkProps) {
                     {label}
                 </span>
             </Link>
-        </li>
+        </>
     );
 }

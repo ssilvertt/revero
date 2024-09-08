@@ -14,6 +14,7 @@ import SmsSVG from '@svg/sms.svg?react';
 import TrxSVG from '@svg/trx.svg?react';
 import Tonsvg from '@svg/ton.svg?react';
 import TetherroundSVG from '@svg/tetherround.svg?react';
+import { motion } from 'framer-motion';
 export function Cabinet() {
     const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true };
     const SLIDES = [
@@ -31,7 +32,7 @@ export function Cabinet() {
     ];
 
     return (
-        <div>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 1}}>
             <Header />
             <div className="border-t-2 border-active rounded-t-2xl pt-6"></div>
             <EmblaCarousel slides={SLIDES} options={OPTIONS} />
@@ -175,6 +176,6 @@ export function Cabinet() {
             {/* </div> */}
 
             <div className="h-20"></div>
-        </div>
+        </motion.div>
     );
 }

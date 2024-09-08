@@ -1,4 +1,3 @@
-
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 const data = [

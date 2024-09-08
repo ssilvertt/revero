@@ -25,6 +25,6 @@
             "@svg/*": ["./src/assets/svg/*"]
         }
     },
-    "include": ["env.d.ts", "src"],
+    "include": ["env.d.ts", "src", "src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
