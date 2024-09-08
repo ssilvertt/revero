@@ -1,0 +1,17 @@
+<svg width="85.574890" height="83.015625" viewBox="0 0 85.5749 83.0156" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_106_37_dd" x="0.000000" y="0.000000" width="85.574890" height="83.015625" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="8.93014" result="effect_layerBlur_1"/>
+		</filter>
+	</defs>
+	<circle id="Ellipse 55" cx="42.228638" cy="43.507812" r="25.595285" fill="#512222" fill-opacity="1.000000"/>
+	<g filter="url(#filter_106_37_dd)">
+		<path id="Vector" d="M26.79 40.03C26.79 39.25 27.09 38.5 27.64 37.95C28.18 37.4 28.92 37.09 29.69 37.09L38.89 37.09L37.49 30.36C37.46 30.21 37.45 30.05 37.45 29.89C37.45 29.29 37.69 28.73 38.09 28.33L39.63 26.79L49.2 36.47C49.73 37.01 50.05 37.75 50.05 38.56L50.05 53.28C50.05 54.06 49.75 54.81 49.2 55.36C48.66 55.91 47.92 56.22 47.15 56.22L34.06 56.22C32.85 56.22 31.82 55.48 31.38 54.42L26.99 44.05C26.86 43.71 26.79 43.36 26.79 42.97L26.79 40.03ZM58.78 56.22L52.96 56.22L52.96 38.56L58.78 38.56L58.78 56.22Z" fill="#E44242" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<path id="Vector" d="M34.64 52.5L25.1 42.96L34.64 33.42M59.43 42.96L25.1 42.96" stroke="#E44242" stroke-opacity="1.000000" stroke-width="5.086948" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

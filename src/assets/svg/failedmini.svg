@@ -1,0 +1,15 @@
+<svg width="18.021057" height="18.020996" viewBox="0 0 18.0211 18.021" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip106_62">
+			<rect id="Menu / Close_SM" rx="8.178853" width="16.357706" height="16.357706" transform="translate(0.831680 0.831680)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Menu / Close_SM" rx="8.178853" width="16.357706" height="16.357706" transform="translate(0.831680 0.831680)" fill="#D9D9D9" fill-opacity="0"/>
+	<g clip-path="url(#clip106_62)">
+		<path id="Vector" d="M12.01 12.01L9 9.01L6 6M12.01 6L9 9.01M9 9.01L6 12.01" stroke="#FF6B63" stroke-opacity="1.000000" stroke-width="1.501645" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+	<rect id="Menu / Close_SM" rx="8.178853" width="16.357706" height="16.357706" transform="translate(0.831680 0.831680)" stroke="#FF6B63" stroke-opacity="1.000000" stroke-width="1.663361"/>
+</svg>

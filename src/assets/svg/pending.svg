@@ -1,0 +1,18 @@
+<svg width="77.472778" height="75.301025" viewBox="0 0 77.4728 75.301" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_106_94_dd" x="0.000000" y="0.000000" width="77.472778" height="75.301025" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="8.93014" result="effect_layerBlur_1"/>
+		</filter>
+	</defs>
+	<circle id="Ellipse 55" r="25.595285" transform="matrix(-1 0 0 1 38.7353 38.8159)" fill="#485122" fill-opacity="1.000000"/>
+	<path id="Subtract" d="M38.64 26.24C39.81 26.24 40.76 27.19 40.76 28.37L40.76 38.58L48.33 43.62C49.31 44.27 49.57 45.59 48.92 46.57C48.27 47.55 46.95 47.81 45.97 47.16L38.09 41.91C37.1 41.25 36.51 40.14 36.51 38.96L36.51 28.37C36.51 27.19 37.46 26.24 38.64 26.24Z" fill="#FAFF00" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Subtract" d="M8.14 39.72C8.14 56.56 21.79 70.22 38.64 70.22C55.48 70.22 69.14 56.56 69.14 39.72C69.14 22.87 55.48 9.22 38.64 9.22C21.79 9.22 8.14 22.87 8.14 39.72ZM40.76 28.37L40.76 38.58L48.33 43.62C49.31 44.27 49.57 45.59 48.92 46.57C48.27 47.55 46.95 47.81 45.97 47.16L38.09 41.91C37.1 41.25 36.51 40.14 36.51 38.96L36.51 28.37C36.51 27.19 37.46 26.24 38.64 26.24C39.81 26.24 40.76 27.19 40.76 28.37Z" stroke="#FAFF00" stroke-opacity="0" stroke-width="0.966667"/>
+	<g filter="url(#filter_106_94_dd)">
+		<path id="Vector" d="M50.68 36.56C50.68 35.98 50.45 35.43 50.04 35.02C49.63 34.62 49.08 34.39 48.51 34.39L41.64 34.39L42.68 29.42C42.71 29.32 42.72 29.2 42.72 29.08C42.72 28.63 42.53 28.22 42.24 27.93L41.09 26.79L33.94 33.93C33.54 34.33 33.3 34.88 33.3 35.47L33.3 46.33C33.3 46.91 33.53 47.46 33.94 47.87C34.34 48.28 34.9 48.51 35.47 48.51L45.25 48.51C46.15 48.51 46.92 47.96 47.25 47.18L50.53 39.52C50.62 39.27 50.68 39.01 50.68 38.73L50.68 36.56ZM26.79 48.51L31.13 48.51L31.13 35.47L26.79 35.47L26.79 48.51Z" fill="#EEFD08" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
