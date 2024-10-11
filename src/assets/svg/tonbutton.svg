@@ -1,0 +1,14 @@
+<svg width="29.647461" height="29.647461" viewBox="0 0 29.6475 29.6475" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip264_708">
+			<rect id="token:ton" rx="-0.780193" width="28.086954" height="28.086954" transform="translate(0.780193 0.780193)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="token:ton" rx="-0.780193" width="28.086954" height="28.086954" transform="translate(0.780193 0.780193)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip264_708)">
+		<path id="Vector" d="M26.71 8.26L15.94 25.41C15.74 25.72 15.43 25.95 15.07 26.04C14.71 26.13 14.33 26.08 14 25.9C13.79 25.78 13.61 25.61 13.47 25.4L2.92 8.25C2.62 7.77 2.46 7.22 2.47 6.65C2.48 5.82 2.82 5.02 3.42 4.44C4.02 3.86 4.82 3.54 5.66 3.56L24 3.56C25.75 3.56 27.17 4.94 27.17 6.64C27.17 7.21 27.01 7.77 26.71 8.26L26.71 8.26ZM5.51 7.68L13.36 19.8L13.36 6.46L6.33 6.46C5.52 6.46 5.15 7 5.51 7.68L5.51 7.68ZM16.27 19.8L24.13 7.68C24.49 7 24.12 6.46 23.31 6.46L16.27 6.46L16.27 19.8Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

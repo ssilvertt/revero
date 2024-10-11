@@ -1,10 +1,18 @@
+import { useEffect } from 'react';
 import { BalanceCard } from '../components/BalanceCard.tsx';
 import { Header } from '../components/Header.tsx';
 import { Transaction } from '../components/ui/Transaction.tsx';
 import { motion } from 'framer-motion';
 export function Wallet() {
+    useEffect(() => window.scrollTo(0, 0), []);
     return (
-        <motion.div className="h-full" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 1}}>
+        <motion.div
+            className="h-full"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+        >
             <Header />
 
             <div className="border-t-2 border-active rounded-t-2xl pt-6"></div>

@@ -6,7 +6,7 @@ import SmallbinanceSVG from '@svg/smallbinance.svg?react';
 import EthereumSVG from '@svg/ethereum.svg?react';
 import BitcoinSVG from '@svg/bitcoin.svg?react';
 
-type CryptoType = 'Tether' | 'Binance' | 'Ethereum' | 'Bitcoin';
+export type CryptoType = 'Tether' | 'Binance' | 'Ethereum' | 'Bitcoin';
 
 interface CryptoConfig {
     name: CryptoType;
@@ -17,7 +17,6 @@ interface CryptoConfig {
     bgGradientTo: string;
     icon: React.ComponentType;
 }
-
 const cryptoConfigs: Record<CryptoType, CryptoConfig> = {
     Tether: {
         name: 'Tether',

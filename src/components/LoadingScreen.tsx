@@ -9,8 +9,8 @@ export const LoadingScreen: React.FC<{ progress: number }> = ({ progress }) => (
         exit={{ opacity: 0 }}
         className="fixed inset-0 flex items-center justify-center bg-[#111930] z-50"
     >
-        <div className="">
-            <img src="/src/assets/imgs/HeaderLogo.png" className="h-[103.54px] w-[270.45px] mr-4 mb-4" />
+        <div className="p-12">
+            <img src="/src/assets/imgs/HeaderLogo.png" className="scale-75 mr-4 " />
             
             <ProgressBar progress={progress} />
         </div>

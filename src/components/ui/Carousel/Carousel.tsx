@@ -10,7 +10,13 @@ type PropType = {
 };
 
 const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+    const defaultOptions: EmblaOptionsType = {
+        loop: false,
+        containScroll: 'trimSnaps',
+        ...options,
+    };
+
+    const [emblaRef, emblaApi] = useEmblaCarousel(defaultOptions, [Autoplay()]);
 
     const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
         const autoplay = emblaApi?.plugins()?.autoplay;
@@ -23,11 +29,11 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
     const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi, onNavButtonClick);
 
     return (
-        <div className="relative overflow-hidden">
-            <div className="embla overflow-hidden" ref={emblaRef}>
+        <div className="embla">
+            <div className="embla_viewport" ref={emblaRef}>
                 <div className="embla__container flex">
                     {slides.map((slide) => (
-                        <div key={slide.id} className="embla__slide flex-[0_0_100%] min-w-0">
+                        <div key={slide.id} className="embla__slide ">
                             <img
                                 src={slide.imageUrl}
                                 alt={`Slide ${slide.id}`}

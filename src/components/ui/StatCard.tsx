@@ -41,7 +41,7 @@ export function StatCard({ variant }: StatCardProps) {
                     {variant === 'minimal' ? (
                         <>
                             {data.amount.split('₽')[0]}
-                            <span className="font-normal">₽</span>
+                            <span className="font-bold font-gilroy">₽</span>
                         </>
                     ) : (
                         data.amount

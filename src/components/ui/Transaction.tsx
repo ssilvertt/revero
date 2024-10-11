@@ -46,12 +46,12 @@ export function Transaction({ type, status, amount }: TransactionProps) {
             <div className="flex items-center ">
                 <div className={`${getTextColor()}`}>{getIcon()}</div>
                 <div className="flex flex-col gap-y-2 -translate-x-1">
-                    <p className="text-[19.2px] font-bold leading-[110%] tracking-[-2%]">Банковская карта</p>
+                    <p className={`text-[15.2px] font-bold leading-[110%] tracking-[-2%] `}>Банковская карта</p>
                     <p className="text-[12.8px] leading-[110%] tracking-[-2%] text-[#7B8396]">535・・・・952</p>
                 </div>
             </div>
             <div className="flex flex-col items-end gap-y-2">
-                <p className="text-[12.8px] leading-[110%] tracking-[-2%] text-[#7B8396] mt-3">
+                <p className="text-[10.8px] leading-[110%] tracking-[-2%] text-[#7B8396] mt-3">
                     1 ноября 2022 г. | 16:52
                 </p>
                 <div className="flex items-center gap-x-[2px]">

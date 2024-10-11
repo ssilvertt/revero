@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import type { EmblaOptionsType } from 'embla-carousel';
 import { Header } from '../components/Header.tsx';
 import EmblaCarousel from '../components/ui/Carousel/Carousel.tsx';
 import '../components/ui/Carousel/css/embla.css';
 import LiveSVG from '@svg/live.svg?react';
 import HeadphonesSVG from '@svg/headphones.svg?react';
-import { InvestCardCarousel } from '../components/ui/InvestCardCarousel.tsx';
+import InvestCarousel from '../components/ui/InvestCarousel.tsx';
 import { LiveCard } from '../components/ui/LiveCard.tsx';
 import ArrowSVG from '@svg/arrow.svg?react';
 import ArrowblurSVG from '@svg/arrowblur.svg?react';
@@ -15,8 +15,10 @@ import TrxSVG from '@svg/trx.svg?react';
 import Tonsvg from '@svg/ton.svg?react';
 import TetherroundSVG from '@svg/tetherround.svg?react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
 export function Cabinet() {
-    const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true };
+    const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true, containScroll: 'trimSnaps' };
     const SLIDES = [
         { id: 1, imageUrl: 'src/assets/imgs/banners/banner1.png' },
         { id: 2, imageUrl: 'src/assets/imgs/banners/banner2.png' },
@@ -24,6 +26,8 @@ export function Cabinet() {
         { id: 4, imageUrl: 'src/assets/imgs/banners/banner4.png' },
         { id: 5, imageUrl: 'src/assets/imgs/banners/banner5.png' },
     ];
+    useEffect(() => window.scrollTo(0, 0), []);
+    const [balance] = useState(31113);
 
     const liveCardData = [
         { username: 'User1', action: 'Пополнение счета', amount: '99914194 ₽', time: 'Несколько секунд назад' },
@@ -32,8 +36,34 @@ export function Cabinet() {
     ];
 
     return (
-        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 1}}>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="overflow-x-hidden"
+        >
             <Header />
+            <div className="flex justify-between px-2 items-center mb-4">
+                <div className="rounded-[8.61px] shadow-[1.48px_2.08px_4.04px_0px_rgba(0,0,0,0.25)] bg-[rgb(20,29,55)]  w-[190px] flex flex-col py-1">
+                    <p className="font-proxima text-[11.22px] font-bold leading-[110%] tracking-[-2%] text-center">
+                        Ваш баланс
+                    </p>
+                    <p className="text-[30.76px] font-bold leading-[110%] tracking-[-2%] text-center">
+                        {balance.toFixed(0)}₽
+                    </p>
+                </div>
+                <Link to="/maintopup">
+                    <motion.button
+                        className="text-[16px] font-bold leading-[110%] tracking-[-2%] rounded-[14px] bg-gradient-to-b from-[#4201FF] to-[#3891FF] h-11 px-8 text-white shadow-lg"
+                        whileTap={{ scale: 0.95 }}
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                    >
+                        Пополнить
+                    </motion.button>
+                </Link>
+            </div>
             <div className="border-t-2 border-active rounded-t-2xl pt-6"></div>
             <EmblaCarousel slides={SLIDES} options={OPTIONS} />
             <div className="w-full flex justify-center mt-2">
@@ -76,14 +106,15 @@ export function Cabinet() {
                 <p className="text-[15px] font-bold font-proxima leading-[110%] tracking-[-2%] relative opacity-100">
                     Страховый фонд 500.00₽
                 </p>
-                <div className="relative w-6 h-6">
+                <Link to='/fund' className="relative w-6 h-6">
                     <ArrowSVG className="absolute inset-0" />
                     <ArrowblurSVG className="absolute inset-0 transform translate-x-[-10px] translate-y-[-10px]" />
-                </div>
+                </Link>
             </div>
-            <div className="mt-10 ">
-                <InvestCardCarousel />
-            </div>
+            {/* <div className="mt-10 "> */}
+            {/*     <InvestCardCarousel /> */}
+            {/* </div> */}
+            <InvestCarousel />
             <div className="relative">
                 <div
                     className="h-px rounded-[22px] mt-12 relative "
