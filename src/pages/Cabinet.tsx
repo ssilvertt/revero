@@ -106,7 +106,7 @@ export function Cabinet() {
                 <p className="text-[15px] font-bold font-proxima leading-[110%] tracking-[-2%] relative opacity-100">
                     Страховый фонд 500.00₽
                 </p>
-                <Link to='/fund' className="relative w-6 h-6">
+                <Link to="/fund" className="relative w-6 h-6">
                     <ArrowSVG className="absolute inset-0" />
                     <ArrowblurSVG className="absolute inset-0 transform translate-x-[-10px] translate-y-[-10px]" />
                 </Link>

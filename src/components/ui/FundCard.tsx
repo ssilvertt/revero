@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { AnimatedButton } from './AnimatedButton.tsx';
-import SafeiconSVG from '@svg/safeicon.svg?react'
-import SafeiconmaskSVG from '@svg/safeiconmask.svg?react'
+import SafeiconSVG from '@svg/safeicon.svg?react';
+import SafeiconmaskSVG from '@svg/safeiconmask.svg?react';
 
 export function FundCard() {
     const [inputValue, setInputValue] = useState('');
     const [isValid, setIsValid] = useState(true);
-    
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
-        
+
         // Allow only digits, including leading zeros
         if (/^\d*$/.test(value)) {
             setInputValue(value);
@@ -18,7 +18,7 @@ export function FundCard() {
             setIsValid(false);
         }
     };
-    
+
     const handleBlur = () => {
         // On blur, if the input is not empty, remove leading zeros
         if (inputValue !== '') {
@@ -26,7 +26,7 @@ export function FundCard() {
             setInputValue(parsedValue);
         }
     };
-    
+
     return (
         <div className="relative p-[1.5px] bg-gradient-to-t from-[#3991FF] to-[#410FFF] h-32 mx-4 rounded-xl overflow-hidden">
             <div className="relative h-full bg-main rounded-xl flex flex-col pl-3 pr-3 pt-3 z-10 overflow-hidden">
@@ -37,7 +37,9 @@ export function FundCard() {
                             <p className="font-proxima text-[30px] font-bold leading-[37px] relative z-20">
                                 78,602,21 <span className="font-bold font-gilroy">₽</span>
                             </p>
-                            <p className="font-proxima text-[11.62px] font-bold leading-[14px] relative z-20">Страховой фонд REVERO</p>
+                            <p className="font-proxima text-[11.62px] font-bold leading-[14px] relative z-20">
+                                Страховой фонд REVERO
+                            </p>
                         </div>
                         <div className="relative border border-[#343949] rounded-[6px] w-full px-2 h-[35px] flex items-center mb-3">
                             <input
@@ -48,7 +50,9 @@ export function FundCard() {
                                 className={`w-full bg-transparent font-proxima text-[15px] font-bold leading-[18px] ${isValid ? 'text-white' : 'text-red-500'}`}
                                 placeholder="0"
                             />
-                            <span className="absolute right-2 font-proxima text-[16.67px] leading-[20px] opacity-50">₽</span>
+                            <span className="absolute right-2 font-proxima text-[16.67px] leading-[20px] opacity-50">
+                                ₽
+                            </span>
                         </div>
                     </div>
                     <div className="col-span-4 flex flex-col justify-end relative">

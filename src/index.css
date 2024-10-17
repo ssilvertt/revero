@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html{
+body,
+html {
     overscroll-behavior: none;
     overscroll-behavior-y: none;
 }
-
-
 
 @font-face {
     font-family: 'Proxima Nova';

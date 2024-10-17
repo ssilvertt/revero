@@ -11,7 +11,7 @@ export const LoadingScreen: React.FC<{ progress: number }> = ({ progress }) => (
     >
         <div className="p-12">
             <img src="/src/assets/imgs/HeaderLogo.png" className="scale-75 mr-4 " />
-            
+
             <ProgressBar progress={progress} />
         </div>
     </motion.div>

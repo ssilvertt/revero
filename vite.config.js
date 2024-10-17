@@ -18,7 +18,7 @@ export default defineConfig({
     },
     assetsInclude: ['**/*.otf'], // Include .otf files as assets
     build: {
-        chunkSizeWarningLimit: 1600,
+        chunkSizeWarningLimit: 5000,
         rollupOptions: {
             input: {
                 main: fileURLToPath(new URL('./index.html', import.meta.url)),
