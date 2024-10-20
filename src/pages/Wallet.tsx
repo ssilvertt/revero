@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
 import { BalanceCard } from '../components/BalanceCard.tsx';
 import { Header } from '../components/Header.tsx';
 import { Transaction } from '../components/ui/Transaction.tsx';
 import { motion } from 'framer-motion';
 export function Wallet() {
-    useEffect(() => window.scrollTo(0, 0), []);
+   
     return (
         <motion.div
             className="h-full"
@@ -14,10 +13,10 @@ export function Wallet() {
             transition={{ duration: 1 }}
         >
             <Header />
-
+            
             <div className="border-t-2 border-active rounded-t-2xl pt-6"></div>
             <BalanceCard />
-
+            
             <div className=" ">
                 <div className="h-[130px] rounded-[14px] backdrop-blur-[45.31px] bg-[#1111118C] mx-1 pt-4 mt-10">
                     <p className="font-proxima text-[20px] font-bold leading-[110%] text-center ">История транзакций</p>
@@ -30,9 +29,8 @@ export function Wallet() {
                     </div>
                 </div>
             </div>
-
             <div className="h-px rounded-[22px] mt-5 bg-[#1B2645] mx-1 -translate-y-[2px]"></div>
-
+            
             <Transaction type="incoming" status="accepted" amount={1000} />
             <Transaction type="withdrawal" status="failed" amount={1000} />
             <Transaction type="incoming" status="pending" amount={1000} />

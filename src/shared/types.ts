@@ -22,3 +22,9 @@ export interface User {
     allows_write_to_pm: boolean;
     referer_user_id: string | null;
 }
+
+export interface ProfileResponse{
+    balance: string;
+    user: User;
+    is_admin: boolean;
+}

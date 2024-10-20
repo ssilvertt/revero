@@ -12,10 +12,10 @@ export function Header() {
                 <img src="/src/assets/imgs/avatar.png" className="w-[50px] h-[50px]" alt="Avatar" />
                 <div className="flex flex-col my-auto">
                     <p className="text-[17.14px] text-white leading-[110%] tracking-[-2%] font-bold font-proxima">
-                        {isLoading ? '...' : user?.first_name || 'Загрузка...'}
+                        {isLoading ? '...' : user?.first_name || <div className='h-2 bg-[#1C2133] w-full animate-pulse rounded-full'></div>}
                     </p>
                     <p className="text-[8.83px] text-white leading-[110%] tracking-[-2%] font-bold font-proxima">
-                        ВАШ ID: {isLoading ? '...' : user?.telegram_id || 'Загрузка...'}
+                        ВАШ ID: {isLoading ? '...' : user?.telegram_id || <div className='h-2 bg-[#1C2133] w-full animate-pulse rounded-full'></div>}
                     </p>
                 </div>
             </div>

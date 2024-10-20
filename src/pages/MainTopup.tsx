@@ -51,6 +51,7 @@ export function MainTopup() {
                     </p>
                 </Link>
             </AnimatedButton>
+            
             <div className="border-t-2 border-active rounded-t-2xl pt-6 mt-4"></div>
             <div className="p-4">
                 <p className="text-white font-proxima text-[25.82px] font-bold leading-[110%] tracking-[-2%] text-center mb-6">

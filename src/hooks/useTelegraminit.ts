@@ -37,7 +37,7 @@ export const useTelegramInit = (): UseTelegramInitReturn => {
                 const response = await authApi.initTelegram(initData);
                 setData(response);
                 console.log('Received user data:', response.user);
-                // Убедимся, что updateUser вызывается с корректными данными
+                
                 if (response.user) {
                     updateUser(response.user);
                 }
